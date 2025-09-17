@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: "Segoe UI", Verdana, sans-serif;
+  line-height: 1.7;
+  background: #f4f6f9;
+  color: #2c2c2c;
+}
+
+/* Header */
+header {
+  background: 
+    /* subtle transparent pattern on top */
+    url("https://www.transparenttextures.com/patterns/hexellence.png"),
+    linear-gradient(135deg, #1B5886, #144263);
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-blend-mode: overlay; /* makes pattern blend into colors */
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #144263;
+  padding: 18px;
+  position: sticky; /* Stays at top */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #1B5886;
+  color: #ffcc00;
+}
+
+nav a.active {
+  background: #1B5886;
+  color: #ffcc00;
+}
+
+/* Main content */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: #1B5886;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+/* Columns */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.column h3 {
+  color: #1B5886;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Images */
+main img {
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+a.demo-link {
+  color: #1B5886;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a.demo-link:hover {
+  color: #ff6600;
+}
+
+/* Read More buttons inside columns */
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #144263; /* same as nav background */
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.read-more:hover {
+  background: #1B5886; /* same as nav hover */
+  color: #ffcc00;      /* golden hover text */
+}
+
+/* Footer */
+footer {
+  background: #1B5886;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 16px;
+  margin-top: 60px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+}
